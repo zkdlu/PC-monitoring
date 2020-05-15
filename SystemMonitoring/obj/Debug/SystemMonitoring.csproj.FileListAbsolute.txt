@@ -31,3 +31,5 @@ E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\SystemMonitoring.pdb
 E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\Views\CpuUsageView.g.cs
 E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\Views\CpuUsageView.baml
 E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\resources\styles.baml
+E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\Views\DiskReadWriteView.g.cs
+E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\Views\DiskReadWriteView.baml
