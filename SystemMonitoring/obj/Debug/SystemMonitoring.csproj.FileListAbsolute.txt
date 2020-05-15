@@ -30,3 +30,4 @@ E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\SystemMonitoring.exe
 E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\SystemMonitoring.pdb
 E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\Views\CpuUsageView.g.cs
 E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\Views\CpuUsageView.baml
+E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\resources\styles.baml

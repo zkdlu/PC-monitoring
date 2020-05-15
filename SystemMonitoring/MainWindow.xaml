@@ -7,33 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
-        <Style x:Key="CardUI" TargetType="{x:Type UserControl}">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type UserControl}">
-                        <Grid Margin="10">
-                            <Border BorderBrush="Black" BorderThickness="1" Background="OldLace">
-                                <Border.Effect>
-                                    <DropShadowEffect ShadowDepth="1"/>
-                                </Border.Effect>
-                                <Grid>
-                                    <ContentPresenter Content="{TemplateBinding Content}"/>
-                                </Grid>
-                            </Border>
-                            <Thumb Width="20" Height="20" 
-                                   VerticalAlignment="Bottom" HorizontalAlignment="Right" 
-                                   Cursor="SizeAll" Background="Gray">
-                                <i:Interaction.Triggers>
-                                    <i:EventTrigger EventName="DragDelta">
-                                        <command:EventToCommand Command="{Binding DragCommand}" PassEventArgsToCommand="True"/>
-                                    </i:EventTrigger>
-                                </i:Interaction.Triggers>
-                            </Thumb>
-                        </Grid>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+        <ResourceDictionary Source="resources/styles.xaml"/>
     </Window.Resources>
 
     <WrapPanel>
