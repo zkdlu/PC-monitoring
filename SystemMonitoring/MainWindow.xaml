@@ -16,12 +16,9 @@
                                 <Border.Effect>
                                     <DropShadowEffect ShadowDepth="1"/>
                                 </Border.Effect>
-                                <DockPanel>
-                                    <Grid DockPanel.Dock="Top">
-                                        <ContentPresenter Content="{TemplateBinding Content}"/>
-                                    </Grid>
-                                    
-                                </DockPanel>
+                                <Grid>
+                                    <ContentPresenter Content="{TemplateBinding Content}"/>
+                                </Grid>
                             </Border>
                             <Thumb Width="20" Height="20" 
                                    VerticalAlignment="Bottom" HorizontalAlignment="Right" 
@@ -38,8 +35,9 @@
             </Setter>
         </Style>
     </Window.Resources>
-    
+
     <WrapPanel>
         <views:BaseView Style="{StaticResource CardUI}" Width="{Binding CardWidth}" Height="{Binding CardHeight}"/>
+        <views:CpuUsageView Style="{StaticResource CardUI}" Width="{Binding CardWidth}" Height="{Binding CardHeight}"/>
     </WrapPanel>
 </Window>

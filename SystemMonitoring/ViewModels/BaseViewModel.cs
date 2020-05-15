@@ -2,12 +2,16 @@
 using System;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
+using System.Windows.Threading;
 using SystemMonitoring.Common;
 
 namespace SystemMonitoring.ViewModels
 {
-    class BaseViewModel : Notifier
+    public class BaseViewModel : Notifier
     {
+        private DispatcherTimer _dispatcherTimer;
+        private Action _execute;
+
         private readonly double _minWidth = 120;
         private readonly double _minHeight = 60;
 
@@ -67,6 +71,21 @@ namespace SystemMonitoring.ViewModels
         {
             CardWidth = 300;
             CardHeight = 150;
+
+            _dispatcherTimer = new DispatcherTimer();
+            _dispatcherTimer.Interval = TimeSpan.FromMilliseconds(1000);
+            _dispatcherTimer.Tick += Dispatcher_Tick;
+        }
+
+        public void StartDispatcher(Action execute)
+        {
+            _execute = execute;
+            _dispatcherTimer.Start();
+        }
+
+        private void Dispatcher_Tick(object sender, EventArgs e)
+        {
+            _execute.Invoke();
         }
     }
 }

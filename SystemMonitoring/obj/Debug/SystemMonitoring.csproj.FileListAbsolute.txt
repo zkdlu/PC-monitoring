@@ -28,3 +28,5 @@ E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\SystemMonitoring.csproj.
 E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\SystemMonitoring.csproj.CopyComplete
 E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\SystemMonitoring.exe
 E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\SystemMonitoring.pdb
+E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\Views\CpuUsageView.g.cs
+E:\study\C#\SystemMonitoring\SystemMonitoring\obj\Debug\Views\CpuUsageView.baml

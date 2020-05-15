@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\study\C#\SystemMonitoring\SystemMonitoring\App.xaml
-252349280
+3-1588667739
 
-15-1606282097
+17-1629857899
 123-1046350185
-MainWindow.xaml;Views\BaseView.xaml;
+MainWindow.xaml;Views\BaseView.xaml;Views\CpuUsageView.xaml;
 
 True
 
