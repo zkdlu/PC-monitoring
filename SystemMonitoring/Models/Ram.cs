@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SystemMonitoring.Models
 {
-    class Ram
+    public class Ram
     {
         private PerformanceCounter _ramCounter;
 

@@ -3,7 +3,7 @@ using System.Net;
 
 namespace SystemMonitoring.Models
 {
-    class Computer
+    public class Computer
     {
         public string Hostname { get; set; }
 

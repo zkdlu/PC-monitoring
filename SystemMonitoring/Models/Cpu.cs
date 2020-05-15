@@ -4,7 +4,7 @@ using System.Management;
 
 namespace SystemMonitoring.Models
 {
-    class Cpu
+    public class Cpu
     {
         private PerformanceCounter _cpuCounter;
 

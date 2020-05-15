@@ -71,11 +71,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Common\Converter\BtoGBConverter.cs" />
     <Compile Include="Common\Converter\BtoKBConverter.cs" />
     <Compile Include="Common\Notifier.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\CpuUsageViewModel.cs" />
     <Compile Include="ViewModels\DiskReadWriteViewModel.cs" />
+    <Compile Include="ViewModels\DiskUsageViewModel.cs" />
     <Compile Include="Views\BaseView.xaml.cs">
       <DependentUpon>BaseView.xaml</DependentUpon>
     </Compile>
@@ -84,6 +86,9 @@
     </Compile>
     <Compile Include="Views\DiskReadWriteView.xaml.cs">
       <DependentUpon>DiskReadWriteView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DiskUsageView.xaml.cs">
+      <DependentUpon>DiskUsageView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -110,6 +115,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\DiskReadWriteView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DiskUsageView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

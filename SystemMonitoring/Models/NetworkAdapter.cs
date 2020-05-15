@@ -1,6 +1,6 @@
 ﻿namespace SystemMonitoring.Models
 {
-    class NetworkAdapter
+    public class NetworkAdapter
     {
         public string Interface { get; set; }
 

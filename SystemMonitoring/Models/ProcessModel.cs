@@ -1,6 +1,6 @@
 ﻿namespace SystemMonitoring.Models
 {
-    class ProcessModel
+    public class ProcessModel
     {
         public string Name { get; set; }
 

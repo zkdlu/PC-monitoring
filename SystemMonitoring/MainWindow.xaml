@@ -14,5 +14,6 @@
         <views:BaseView Style="{StaticResource CardUI}" Width="{Binding CardWidth}" Height="{Binding CardHeight}"/>
         <views:CpuUsageView Style="{StaticResource CardUI}" Width="{Binding CardWidth}" Height="{Binding CardHeight}"/>
         <views:DiskReadWriteView Style="{StaticResource CardUI}" Width="{Binding CardWidth}" Height="{Binding CardHeight}"/>
+        <views:DiskUsageView Style="{StaticResource CardUI}" Width="{Binding CardWidth}" Height="{Binding CardHeight}"/>
     </WrapPanel>
 </Window>

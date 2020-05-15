@@ -1,6 +1,6 @@
 ﻿namespace SystemMonitoring.Models
 {
-    class Disk
+    public class Disk
     {
         public long TotalSize { get; set; }
 
