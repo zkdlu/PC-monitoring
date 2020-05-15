@@ -3,10 +3,43 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SystemMonitoring"
+        xmlns:local="clr-namespace:SystemMonitoring" xmlns:views="clr-namespace:SystemMonitoring.Views" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:command="http://www.galasoft.ch/mvvmlight"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="CardUI" TargetType="{x:Type UserControl}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type UserControl}">
+                        <Grid Margin="10">
+                            <Border BorderBrush="Black" BorderThickness="1" Background="OldLace">
+                                <Border.Effect>
+                                    <DropShadowEffect ShadowDepth="1"/>
+                                </Border.Effect>
+                                <DockPanel>
+                                    <Grid DockPanel.Dock="Top">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </Grid>
+                                    
+                                </DockPanel>
+                            </Border>
+                            <Thumb Width="20" Height="20" 
+                                   VerticalAlignment="Bottom" HorizontalAlignment="Right" 
+                                   Cursor="SizeAll" Background="Gray">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="DragDelta">
+                                        <command:EventToCommand Command="{Binding DragCommand}" PassEventArgsToCommand="True"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </Thumb>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
     <WrapPanel>
-        
+        <views:BaseView Style="{StaticResource CardUI}" Width="{Binding CardWidth}" Height="{Binding CardHeight}"/>
     </WrapPanel>
 </Window>
